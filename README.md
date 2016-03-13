@@ -15,30 +15,30 @@ Per poter utilizzare lo script è necessario installare NodeJs.
 
 per ottenere l'elenco ISTAT in formato JSON dei comuni
 
-`node comunu.js --set=regioni`
+`node comuni.js --set=regioni`
 
 per ottenere l'elenco ISTAT in formato JSON delle regioni
 
-`node comunu.js --set=province`
+`node comuni.js --set=province`
 
 per ottenere l'elenco ISTAT in formato JSON delle province
 
-`node comunu.js --id`
+`node comuni.js --id`
 
 per aggiungere un campo `id` autoincrementante ai dati
 
-`node comunu.js --cache`
+`node comuni.js --cache`
 
 evita che ad ogni utilizzo del tool venga prelevato l'elenco ISTAT via HTTP, memorizzandolo sul filesystem locale
 
-`node comunu.js --sort=nome`
+`node comuni.js --sort=nome`
 
 ordina i risultati per il campo indicato nel parametro `--sort`. Gli id autoincrementanti vengono applicati successivamente all'ordinamento.
 
-`node comunu.js --cols=id,nome`
+`node comuni.js --cols=id,nome`
 
 filtra le colonne restituendo quelle indicate
 
-`node comunu.js --sql`
+`node comuni.js --sql`
 
 ottiene l'output sotto forma di `INSERT` per SQL.
