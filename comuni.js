@@ -75,6 +75,7 @@ function parseCsv(body) {
 		} else if (argv.set == 'province') {
 			result = normProvince;
 		} else {
+			argv.set = 'comuni';
 			result = data;
 		}
 
@@ -110,7 +111,7 @@ function sqlize(row) {
 		return '\'' + e.replace(/'/g, '\\\'') + '\'';
 	})
 	var out = 'INSERT INTO ';
-	out += argv.set;
+	out += argv.table || argv.set;
 	out += ' VALUES (';
 	out += _.values(wrapped).join(',');
 	out += ');';

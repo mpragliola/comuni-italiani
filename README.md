@@ -42,3 +42,7 @@ filtra le colonne restituendo quelle indicate
 `node comuni.js --sql`
 
 ottiene l'output sotto forma di `INSERT` per SQL.
+
+`node comuni.js --sql --table=mycomuni`
+
+per cambiare il nome della tabella
