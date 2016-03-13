@@ -1,14 +1,16 @@
 {
-  "name": "comuni",
+  "name": "comuni-italiani",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pull italian municipalities from the official repository",
   "main": "comuni.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Marco Pragliola",
+  "license": "GPL",
   "devDependencies": {
+  },
+  "dependencies": {
+    "request": "^2.69.0",
     "csv": "^0.4.6",
     "iconv-lite": "^0.4.13",
     "optimist": "^0.6.1",
