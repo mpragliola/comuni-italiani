@@ -15,6 +15,8 @@ if (argv.cache) {
 			parseCsv(data);
 		}
 	});
+} else {
+	fromPermalink();
 }
 
 function fromPermalink(cache) {
