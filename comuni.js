@@ -33,6 +33,32 @@ function fromPermalink(cache) {
 	);
 }
 
+// Codice Regione
+// Codice Città Metropolitana
+// Codice Provincia (1)
+// Progressivo del Comune (2)
+// Codice Comune formato alfanumerico
+// Denominazione in italiano
+// Denominazione in tedesco
+// Codice Ripartizione Geografica
+// Ripartizione geografica
+// Denominazione regione
+// Denominazione Città metropolitana
+// Denominazione provincia
+// Flag Comune capoluogo di provincia
+// Sigla automobilistica
+// Codice Comune formato numerico
+// Codice Comune numerico con 107 province (dal 2006 al 2009)
+// Codice Comune numerico con 103 province (dal 1995 al 2005)
+// Codice Catastale del comune
+// Popolazione legale 2011 (09/10/2011)
+// Codice NUTS1 2010
+// Codice NUTS2 2010 (3) 
+// Codice NUTS3 2010
+// Codice NUTS1 2006
+// Codice NUTS2 2006 (3)
+// Codice NUTS3 2006
+
 function parseCsv(body) {
 	var utf8String = iconv.decode(new Buffer(body), "utf-8");
 	csv.parse(
@@ -49,6 +75,7 @@ function parseCsv(body) {
 			'capoluogo', 'sigla_provincia',
 			'istat_comune_numerico', 'istat_comune_numerico_107',
 			'istat_comune_numerico_103', 'cod_catastale',
+			'popolazione',
 			'nuts1_2010', 'nuts2_2010', 'nuts3_2010',
 			'nuts1_2006', 'nuts2_2006', 'nuts3_2006'
 		]
