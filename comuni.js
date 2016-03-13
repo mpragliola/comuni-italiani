@@ -88,12 +88,23 @@ function parseCsv(body) {
 		var regioni = _.indexBy(data, 'istat_regione');
 
 		var normProvince = _.chain(province)
-			.map(function (p) {return {sigla: p.sigla_provincia, istat: p.istat_provincia, nome: (p.nome_provincia && p.nome_provincia != '-') ? p.nome_provincia : p.nome_cm }})
+			.map(function (p) {
+				return {
+					sigla: p.sigla_provincia,
+					 istat: p.istat_provincia,
+					 nome: (p.nome_provincia && p.nome_provincia != '-') ? p.nome_provincia : p.nome_cm 
+				}
+			})
 			.sortBy('sigla')
 			.value();
 		
 		var normRegioni = _.chain(regioni)
-			.map(function (p) {return {istat: p.istat_regione, nome: p.nome_regione }})
+			.map(function (p) {
+				return {
+					istat: p.istat_regione,
+					nome: p.nome_regione
+				}
+			})
 			.sortBy('istat')
 			.value();
 		
