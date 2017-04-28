@@ -8,6 +8,11 @@ In molti progetti è necessario includere dei dati aggiornati riguardanti i comu
 ## Installazione
 
 Per poter utilizzare lo script è necessario installare NodeJs.
+Potete clonare il repository in una copia locale e installare i package necessari con:
+
+`git clone https://github.com/mpragliola/comuni-italiani`
+`cd comuni-italiani`
+`npm install`
 
 ## Utilizzo e command line options
 
